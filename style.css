@@ -1,0 +1,151 @@
+/* Mobile screen */
+@media screen and (min-width: 720px) {
+    [class*="container"] {
+        width: 100%;
+        float:left;
+        width: 45vw;
+        
+    }
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0)
+    }
+}
+
+.container {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    animation: transitionIn 2s;
+    
+}
+
+.card {
+    width: 325px;
+    background-color: #91BAD6;
+    overflow: hidden;  
+    margin-left: 1px;
+    margin-top: 1px;
+    border-radius: 5%;
+}
+
+.profilecard {
+    width: 325px;
+    background-color: #91BAD6;
+    border-radius: 5%;
+    overflow: hidden;
+    background-image: url(image/woodbackground.webp);
+    margin-left: 1px;
+    margin-top: 1px;
+}
+    
+
+.card-contents { 
+    padding: 1px;
+}
+
+.card-contents h3 {
+    font-size: 28px;
+    margin-bottom: 8px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color:  #FFE993;
+}
+
+
+.card-contents p {
+    color: #FFFFFF;
+    font-size: 15px;
+    line-height: 1.3;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+
+}
+
+.card-contents .Profile-btn,
+.card-contents .Read-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #00008B;
+    text-decoration: none;
+    border-radius: 7px;
+    margin-top: 16px;
+    color: #ADD8E6;
+    font-family: Impact;
+    cursor: pointer;
+
+}
+
+.card-contents .Read-btn:hover,
+.card-contents .Profile-btn:hover,
+.card-contents .Twitter-link:hover,
+.card-contents .Facebook-link:hover,
+.card-contents .Twitter-link:hover {
+    background-color: #FFFFFF;;
+    opacity: 5px;
+    
+}
+
+.korea-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.korea-image:hover {
+    height: 100%;
+    transition: width 2s, height 2s;
+    width: 500px;
+    
+    
+}
+
+.profile-image {
+    width:315px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    object-fit: cover;
+    border: 4px solid #000000;
+    height: 300px;
+    
+}
+
+.Twitter-link,
+.Facebook-link,
+.Instagram-link {
+    width: 20px;
+    height: 20px;
+    display: inline;
+    background-color: transparent;
+    transition-duration: 5s;
+    cursor: pointer;
+    border: 2px solid #000000;
+    background-size: cover;
+    
+}
+
+a.email {
+    font-family: 'Trebuchet MS', sans-serif;
+    opacity: 9px;
+    color: #FFFFFF;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+a:hover {
+    color:  #FF0000;
+}
+
+a:active {
+    color: #FFFFFF;
+  }
+
